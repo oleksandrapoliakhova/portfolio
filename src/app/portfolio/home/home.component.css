@@ -1,0 +1,15 @@
+body {
+  font-family: 'lora', sans-serif;
+}
+
+.custom-span {
+  margin: 5px;
+}
+
+.avatar {
+  height: 150px;
+}
+
+.heading {
+  margin-bottom: 3em;
+}

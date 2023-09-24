@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  --dot-bg: black;
+  --dot-color: white;
+  --dot-size: 1px;
+  --dot-space: 22px;
+  background:
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+}
+
+.overlay{
+  height: 100%;
+  margin: auto;
+  background-color: rgba(0,0,0,0.8); /*dim the background*/
+}

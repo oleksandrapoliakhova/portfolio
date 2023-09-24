@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-center align-items-center w-100" *ngIf="bio$ | async as bio">
+
+  <div class="d-flex justify-content-center align-items-center w-100">
+
+    <div class="flex-column justify-content-center w-50">
+
+      <div class="row heading">
+        <div class="col-3">
+            <img class="avatar" src="/assets/avatar.png" alt="avatar">
+          </div>
+        <div class="col-3">
+          <h3>Hello! My name is {{bio.firstName + ' ' + bio.lastName}}.</h3>
+        </div>
+      </div>
+
+      <div *ngFor="let p of bio.intro">
+        <h4 class="text-left">{{p}}</h4>
+      </div>
+
+      <span *ngFor="let skill of bio.skills">
+        <span class="badge rounded-pill text-bg-primary custom-span">{{skill}}</span>
+      </span>
+    </div>
+
+  </div>
+</div>
+
+
